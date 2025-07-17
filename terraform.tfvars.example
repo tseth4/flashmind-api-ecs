@@ -1,0 +1,17 @@
+# Example terraform.tfvars file
+# Copy this to terraform.tfvars and fill in your actual values
+# DO NOT commit terraform.tfvars to version control
+
+django_secret_key    = "your-django-secret-key-here"
+django_allowed_hosts = "your-domain.com,.us-east-1.elb.amazonaws.com"
+cors_allowed_origins = "https://your-frontend-domain.com"
+
+# Database configuration
+db_name                   = "flashmind"
+db_user                   = "your-db-username"
+db_password               = "your-secure-db-password"
+django_superuser_username = "admin"
+django_superuser_email    = "your-email@example.com"
+django_superuser_password = "your-secure-admin-password"
+firebase_admin_json_path  = "../secrets/firebase_admin.json"
+key_name                  = "not-needed" 
